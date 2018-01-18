@@ -20,8 +20,8 @@ namespace Exercise2A_Calculating_Averages
             double avg;
 
             //this code asks the user for input of any 10 numbers
-            Console.Write("Input 10 numbers: ");
-            
+            Console.Write("Input 10 numbers between 0 and 100: ");
+
             //as the user inputs their numbers, the "for" loop initializes at 1
             //while less than or equal to 10 the loop continues and is incremented after
             for (i=1; i<=10;i++)
@@ -36,8 +36,30 @@ namespace Exercise2A_Calculating_Averages
             //after the loop completes, avg is set by dividing the sum by 10
             avg = sum / 10.0;
 
-            //The final step pushes the text out with the user's sum and their average
+            //This step pushes the text out with the user's sum and their average
             Console.Write("The sum of your 10 numbers is: {0}\nThe Average is: {1}\n", sum, avg);
+
+            //This step tells you what letter grade the student would have based on the average
+            if (avg >= 90)
+            {
+                Console.WriteLine("Your grade is an A");
+            }
+            else if (avg >=80)
+            {
+                Console.WriteLine("Your Grade is a B");
+            }
+            else if (avg >=70)
+            {
+                Console.WriteLine("Your Grade is a C");
+            }
+            else if (avg >=60)
+            {
+                Console.WriteLine("Your Grade is a D");
+            }
+            else if (avg <60)
+            {
+                Console.WriteLine("Your Grade is an F");
+            }
         }
         
             
