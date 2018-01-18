@@ -40,6 +40,7 @@ namespace Exercise2A_Calculating_Averages
             Console.Write("The sum of your 10 numbers is: {0}\nThe Average is: {1}\n", sum, avg);
 
             //This step tells you what letter grade the student would have based on the average
+            //this is a simple "if, else if" style check against the calculated average
             if (avg >= 90)
             {
                 Console.WriteLine("Your grade is an A");
