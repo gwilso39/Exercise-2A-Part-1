@@ -29,6 +29,8 @@ namespace Exercise2A_Calculating_Averages
                 //When the user inputs their number, this write will designate where they are in sequence
                 Console.Write("Number - {0} :", i);
 
+                //while (Console.ReadLine())) - trying to work exceptions into test a number 0-100...
+
                 //When the number is input, it is converted from a string to an int and added to variable n
                 n = Convert.ToInt32(Console.ReadLine());
                 sum += n;
@@ -61,7 +63,10 @@ namespace Exercise2A_Calculating_Averages
             {
                 Console.WriteLine("Your Grade is an F");
             }
+            //Console.WriteLine("Are you ready to try something else?");
+            
         }
+
         
             
             
